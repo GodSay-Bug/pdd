@@ -63,6 +63,7 @@ public class OrderServiceImpl implements OrderService {
 	 * @param pdOrder 订单对象
 	 * @return
 	 * @throws Exception
+     * RabbitMQ流量削峰
 	 */
 	public String saveOrder(PdOrder pdOrder) throws Exception {
         String orderId = generateId();
